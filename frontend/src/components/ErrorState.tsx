@@ -1,0 +1,1 @@
+export function ErrorState({ message, onRetry }: { message: string; onRetry: () => void }) { return <div className="state-card error-state"><p>{message}</p><button className="button button-secondary" onClick={onRetry}>Повторить</button></div>; }

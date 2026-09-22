@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: kanban-margin-api
+    env: node
+    buildCommand: npm ci && npm run build --workspace backend
+    startCommand: npm run start --workspace backend
+    healthCheckPath: /health/
